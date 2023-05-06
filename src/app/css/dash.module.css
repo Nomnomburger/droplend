@@ -1,18 +1,20 @@
 .dashBox1 {
     background-color: var(--white);
     border-radius: 15px;
-    width: 60%;
+    width: 55%;
     height: 20vh;
     margin: 17px;
     padding: 0;
+    position: relative;
 }
 
 .dashBox2 {
     background: var(--primary);
     border-radius: 15px;
-    width: 40%;
+    width: 45%;
     margin: 17px;
     padding: 0;
+    position: relative;
 }
 
 .dashBox3 {
@@ -37,6 +39,7 @@
     margin: 17px;
     height: 30vh;
     padding: 0;
+    position: relative;
 }
 
 .dashBoxHeader {
@@ -45,19 +48,19 @@
 }
 
 .dashBoxDescription {
-    font-family: 'Montreal-Medium', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    padding-left: 19px;
 }
 
 .dashBoxNum {
-    font-family: 'Montreal-Regular', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 64px;
-    line-height: 77px;
+    padding-left: 19px;
+    padding-top: 24px !important;
+}
+.dashBoxNumUnit {
+    font-size: 32px;
 }
 
 .dashContainer {

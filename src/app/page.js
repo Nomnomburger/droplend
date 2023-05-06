@@ -19,10 +19,15 @@ export default function Home() {
                           <Row>
                               <Col class={dash.dashBox1}>
                                   <h2 className={dash.dashBoxHeader}>Market</h2>
-                                  <button className={main.circleBtn}>A</button>
+                                  <button className={main.circleBtn}>▶</button>
+                                  <span className={dash.dashBoxNum}>1<span className={dash.dashBoxNumUnit}>XRP</span> = $0.62</span>
+                                  <p className={dash.dashBoxDescription}>Rose 2% from 24h ago</p>
                               </Col>
                               <Col className={dash.dashBox2}>
                                   <h2 className={dash.dashBoxHeader}>Borrowed</h2>
+                                  <button className={main.circleBtn}>▶</button>
+                                  <span className={dash.dashBoxNum}>1,508.87<span className={dash.dashBoxNumUnit}>XRP</span></span>
+                                  <p className={dash.dashBoxDescription}>$1234.42</p>
                               </Col>
                           </Row>
                           <Row>
@@ -38,7 +43,10 @@ export default function Home() {
                               </Col>
                           </Row>
                           <Row>
-                              <Col className={dash.dashBox5}><h2 className={dash.dashBoxHeader}>Recent History</h2></Col>
+                              <Col className={dash.dashBox5}>
+                                  <h2 className={dash.dashBoxHeader}>Recent History</h2>
+                                  <button className={main.circleBtn}>▶</button>
+                              </Col>
                           </Row>
                       </Col>
                   </Row>
