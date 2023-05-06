@@ -1,13 +1,9 @@
 "use client";
-
 import { Client, xrpToDrops, dropsToXrp } from "xrpl";
 import React, { useEffect, useState } from "react";
 
-
-// A common flow of creating a test account and sending XRP
-function App() {
+export default function App() {
   const [balance, setBalance] = useState(0);
-  const [wallet, setWallet] = useState("");
   const [client] = useState(new Client("wss://s.altnet.rippletest.net:51233"));
   const [paymentButtonText, setPaymentButtonText] = useState(
     "Wait for the wallet to be funded..."
@@ -19,27 +15,25 @@ function App() {
     console.log("start connection");
     client.connect().then(() => {
       console.log("connected");
-      console.log("funding wallet");
-
-
-      client.fundWallet().then((fund_result) => {
-        console.log(fund_result);
-        setBalance(fund_result.balance);
-        setWallet(fund_result.wallet);
-        setPaymentButtonText("Send a 22 XRP Payment!");
-      });
     });
   }, []);
 
 
   async function sendPayment() {
+    // our wallet
+    const secret = "sEdTj7coge85azjzi12BXzYHAYvfu7u"; //hide this
+
+    const dropLendWallet = xrpl.Wallet.fromSeed(secret);
+
+    let sendAmount = 69 //-----------change
+
     console.log("Creating a payment transaction");
-    setStatusText("Sending a payment for 22 XRP...");
+    setStatusText("Sending a payment for " + sendAmount + " XRP...");
     const tx = {
       TransactionType: "Payment",
-      Account: wallet.address,
-      Amount: xrpToDrops("22"),
-      Destination: "rPT1Sjq2YGrBMTttX4GZHjKu9dyfzbpAYe"
+      Account: dropLendWallet.address,
+      Amount: xrpToDrops(String(sendAmount)),
+      Destination: "rwconANw1oCU9dqz6RtP4qCVbeqnrgBLrH"
     };
 
 
@@ -47,7 +41,7 @@ function App() {
     console.log("Submitting the transaction (Takes 3-5 seconds)");
     const submitted_tx = await client.submitAndWait(tx, {
       autofill: true, // Adds in fields that can be automatically set like fee and last_ledger_sequence
-      wallet: wallet
+      wallet: dropLendWallet
     });
 
 
@@ -62,14 +56,12 @@ function App() {
     // Look up the new account balances by sending a request to the ledger
     const account_info = await client.request({
       command: "account_info",
-      account: wallet.address
+      account: dropLendWallet.address
     });
 
 
-    // See https://xrpl.org/account_info.html#account_info ---------------
     const balance = account_info.result.account_data.Balance;
     console.log(`New account balance: ${balance} drops`);
-
 
     setBalance(dropsToXrp(balance));
   }
@@ -89,10 +81,6 @@ function App() {
     </div>
   );
 }
-
-
-// Search xrpl.org for docs on transactions + requests you can do!
-export default App;
 
 
 
