@@ -1,37 +1,50 @@
-.dash-box-1 {
-    background: var(--white);
+.dashBox1 {
+    background-color: var(--white);
     border-radius: 15px;
+    width: 60%;
+    height: 20vh;
+    margin: 17px;
+    padding: 0;
 }
 
-.dash-box-2 {
+.dashBox2 {
     background: var(--primary);
     border-radius: 15px;
+    width: 40%;
+    margin: 17px;
+    padding: 0;
 }
 
-.dash-box-3 {
+.dashBox3 {
     background: var(--white);
     border-radius: 15px;
+    margin: 17px;
+    height: 60vh;
+    padding: 0;
 }
 
-.dash-box-4 {
+.dashBox4 {
     background: var(--white);
     border-radius: 15px;
+    margin: 17px;
+    height: 50vh;
+    padding: 0;
 }
 
-.dash-box-5 {
+.dashBox5 {
     background: var(--light-gray);
     border-radius: 15px;
+    margin: 17px;
+    height: 30vh;
+    padding: 0;
 }
 
-.dash-box-header {
-    font-family: 'Montreal-Book', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+.dashBoxHeader {
+    padding-top: 19px;
+    padding-left: 19px;
 }
 
-.dash-box-description {
+.dashBoxDescription {
     font-family: 'Montreal-Medium', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -39,10 +52,16 @@
     line-height: 19px;
 }
 
-.dash-box-num {
+.dashBoxNum {
     font-family: 'Montreal-Regular', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 64px;
     line-height: 77px;
+}
+
+.dashContainer {
+    height: 100vh;
+    width: 100vw;
+    background: blue;
 }

@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30f208c2-2ec0-4b76-845b-0a9ee4f72f2b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/chat/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/history/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/wallet/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/css/main.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/css/dash.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/css/dash.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/css/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/css/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/css/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/css/page.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/xrp/Sendxrp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/xrp/Sendxrp.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -44,6 +48,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.HTML",
     "ts.external.directory.path": "C:\\Users\\winst\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\223.8617.44\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -76,6 +81,7 @@
       <updated>1683348739191</updated>
       <workItem from="1683348741122" duration="7192000" />
       <workItem from="1683357398097" duration="1945000" />
+      <workItem from="1683381039811" duration="7671000" />
     </task>
     <servers />
   </component>

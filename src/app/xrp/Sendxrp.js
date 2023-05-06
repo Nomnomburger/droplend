@@ -1,7 +1,9 @@
 "use client";
 
-import { Client, xrpToDrops, dropsToXrp } from "xrpl";
+/*import { Client, xrpToDrops, dropsToXrp } from "xrpl";
 import React, { useEffect, useState } from "react";
+*/
+
 
 
 // A common flow of creating a test account and sending XRP
