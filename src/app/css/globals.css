@@ -1,0 +1,72 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+  --black: #000000;
+  --dark-gray: #264C50;
+  --gray: #92A5A7;
+  --light-gray: #D9D9D9;
+  --primary: #6FE862;
+  --cream: #DFFDE6;
+  --white: #ffffff;
+  --backdrop: #232323;
+}
+
+@font-face {
+  font-family: "Montreal-Regular";
+  font-style: normal;
+  src: url('/public/fonts/montreal/regular/PPNeueMontreal-Regular.woff2');
+  src: url('/public/fonts/montreal/regular/PPNeueMontreal-Regular.woff2') format('woff2'),
+  url('/public/fonts/montreal/regular/PPNeueMontreal-Regular.woff') format('woff'),
+  url('/public/fonts/montreal/regular/PPNeueMontreal-Regular.ttf') format('truetype'),
+  url('/public/fonts/montreal/regular/PPNeueMontreal-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: "Montreal-Medium";
+  font-style: normal;
+  src: url('/public/fonts/montreal/medium/PPNeueMontreal-Medium.woff2');
+  src: url('/public/fonts/montreal/medium/PPNeueMontreal-Medium.woff2') format('woff2'),
+  url('/public/fonts/montreal/medium/PPNeueMontreal-Medium.woff') format('woff'),
+  url('/public/fonts/montreal/medium/PPNeueMontreal-Medium.ttf') format('truetype'),
+  url('/public/fonts/montreal/medium/PPNeueMontreal-Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: "Montreal-Book";
+  font-style: normal;
+  src: url('/public/fonts/montreal/book/PPNeueMontreal-Book.woff2');
+  src: url('/public/fonts/montreal/book/PPNeueMontreal-Book.woff2') format('woff2'),
+  url('/public/fonts/montreal/book/PPNeueMontreal-Book.woff') format('woff'),
+  url('/public/fonts/montreal/book/PPNeueMontreal-Book.ttf') format('truetype'),
+  url('/public/fonts/montreal/book/PPNeueMontreal-Book.otf') format('opentype');
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--backdrop);
+}
+
+body {
+  background: var(--backdrop);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
