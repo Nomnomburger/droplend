@@ -4,6 +4,7 @@ import Sendxrp from './xrp/Sendxrp.js'
 
 export default function Home() {
   return (
-    <Sendxrp/>
+    // <Sendxrp/>
+      print()
   )
 }
