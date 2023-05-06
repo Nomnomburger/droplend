@@ -38,7 +38,44 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  --black: #000000;
+  --dark-gray: #264C50;
+  --gray: #92A5A7;
+  --light-gray: #D9D9D9;
+  --primary: #6FE862;
+  --cream: #DFFDE6;
+  --white: #ffffff;
 }
+
+@font-face {
+  font-family: "Montreal-Regular";
+  font-style: normal;
+  src: url('/fonts/montreal/regular/PPNeueMontreal-Regular.woff2');
+  src: url('/fonts/montreal/regular/PPNeueMontreal-Regular.woff2'); format('woff2'),
+       url('/fonts/montreal/regular/PPNeueMontreal-Regular.woff') format('woff'),
+       url('/fonts/montreal/regular/PPNeueMontreal-Regular.ttf') format('truetype'),
+       url('/fonts/montreal/regular/PPNeueMontreal-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: "Montreal-Medium";
+  font-style: normal;
+  src: url('/fonts/montreal/medium/PPNeueMontreal-Medium.woff2');
+  src: url('/fonts/montreal/medium/PPNeueMontreal-Medium.woff2'); format('woff2'),
+       url('/fonts/montreal/medium/PPNeueMontreal-Medium.woff') format('woff'),
+       url('/fonts/montreal/medium/PPNeueMontreal-Medium.ttf') format('truetype'),
+       url('/fonts/montreal/medium/PPNeueMontreal-Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: "Montreal-Book";
+  font-style: normal;
+  src: url('/fonts/montreal/book/PPNeueMontreal-Book.woff2');
+  src: url('/fonts/montreal/book/PPNeueMontreal-Book.woff2'); format('woff2'),
+       url('/fonts/montreal/book/PPNeueMontreal-Book.woff') format('woff'),
+       url('/fonts/montreal/book/PPNeueMontreal-Book.ttf') format('truetype'),
+       url('/fonts/montreal/book/PPNeueMontreal-Book.otf') format('opentype');
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
