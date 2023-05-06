@@ -4,6 +4,7 @@ import styles from '../css/page.module.css'
 import dash from '../css/dash.module.css'
 import main from '../css/main.module.css'
 import nav from '../css/nav.module.css'
+import wallet from '../css/wallet.module.css'
 import Link from 'next/link';
 //import Sendxrp from './xrp/Sendxrp.js'
 import Container from 'react-bootstrap/Container';
@@ -28,37 +29,28 @@ export default function Wallet() {
                         <Row>
                             <Col xs={8}>
                                 <Row>
-                                    <Col className={dash.dashBox1}>
-                                        <h2 className={dash.dashBoxHeader}>Market</h2>
-                                        <button className={main.circleBtn}>▶</button>
-                                        <span className={dash.dashBoxNum}>1<span className={dash.dashBoxNumUnit}>XRP</span> = $0.62</span>
-                                        <p className={dash.dashBoxDescription}>Rose 2% from 24h ago</p>
-                                    </Col>
                                     <Col className={dash.dashBox2}>
-                                        <h2 className={dash.dashBoxHeader}>Borrowed</h2>
-                                        <button className={main.circleBtn}>▶</button>
-                                        <span className={dash.dashBoxNum}>1,508.87<span className={dash.dashBoxNumUnit}>XRP</span></span>
-                                        <p className={dash.dashBoxDescription}>$1234.42</p>
+                                        <h2 className={dash.dashBoxHeader}>Total Borrowed</h2>
+                                        <span className={dash.dashBoxNum}>1,508.87<span className={dash.dashBoxNumUnit}>XRP</span> → $1234.42</span>
+                                        <p className={dash.dashBoxDescription}>Last transaction: 2023-05-02</p>
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col className={dash.dashBox3}>
-                                        <h2 className={dash.dashBoxHeader}>Lending Overview</h2>
+                                        <h2 className={dash.dashBoxHeader}>Repay</h2>
+                                    </Col>
+                                    <Col className={dash.dashBox3}>
+                                        <h2 className={dash.dashBoxHeader}>Borrow</h2>
                                     </Col>
                                 </Row>
                             </Col>
                             <Col xs={4}>
                                 <Row>
-                                    <Col className={dash.dashBox4}>
-                                        <h2 className={dash.dashBoxHeader}>AI Consultant</h2>
+                                    <Col className={wallet.walletTransactionsBox}>
+                                        <h2 className={dash.dashBoxHeader}>Transaction History</h2>
                                     </Col>
                                 </Row>
-                                <Row>
-                                    <Col className={dash.dashBox5}>
-                                        <h2 className={dash.dashBoxHeader}>Recent History</h2>
-                                        <button className={main.circleBtn}>▶</button>
-                                    </Col>
-                                </Row>
+
                             </Col>
                         </Row>
                     </Col>
