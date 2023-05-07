@@ -1,34 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+##Inspiration
+International loans are often a pain to configure, with how the numerous intermediaries make the process more trouble than it’s worth. Enter DropLend, a cryptocurrency solution that will help you skip the fees in between and allow you to borrow money in a way that is faster and more secure than ever.
 
-## Getting Started
+##What it does
+Droplend is a revolutionary money-lending service that puts instant cash within your reach, no matter where you are in the world. DropLend allows the users to spend their funds and cover urgent expenses without ever selling their XRP and incurring unnecessary taxes. Our solution leverages XRP’s which are conditionally-held escrows to create a fast and effective way to secure a loan without the requirement of credit score or history and eliminates all risk for us, the lender. This is made possible by using the user’s XRP as collateral. The borrower is able to return their payment through a flexible schedule and will receive their XRP back via the escrow once their cash loan has been paid back. In addition to our loaning services, DropLend also has a built-in AI consultant to provide financial advice and planning suggestions to the client making it a useful multi-purpose financial platform.
 
-First, run the development server:
+##How we built it
+Front-end: NextJS, Bootstrap-React, CSS Back-end: Firebase, XRP API, Cohere API, Paypal API Design: Figma
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+##Challenges we ran into
+A major challenge was the integration process of Ripple. While our back-end team was trying to incorporate Ripple into our solution, the typescript code was returning incompatibility errors where it should have been supported. To overcome this setback, we made the decision to switch from TypeScript to JavaScript and the code complies with no errors.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##Accomplishments that we're proud of
+The UI has a very clean look. The Front end software is working The XRP transactions is functional
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+##What we learned
+Paypal integrations are very complicated. Learned how to integrate paypal API for transactions
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+##What's next for DropLend
+Chat history function More account integrations Stock market integration
