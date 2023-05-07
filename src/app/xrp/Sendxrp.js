@@ -72,14 +72,27 @@ function App() {
     const balance = account_info.result.account_data.Balance;
     console.log(`New account balance: ${balance} drops`);
 
-
     setBalance(dropsToXrp(balance));
   }
 
 
+  function checkBalance() {
+    console.log("Checking balance");
+    client
+      .request({
+        command: "account_info",
+        account: wallet.address
+      })
+      .then((account_info) => {
+        console.log(account_info);
+        const balance = account_info.result.account_data.Balance;
+        console.log(dropsToXrp(balance));
+      });
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header"> 
         The new wallet currently has {balance} XRP <br />
         <br />
       </header>

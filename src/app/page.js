@@ -11,14 +11,27 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-import {auth} from '../../firebase/clientApp';
+import { auth } from '../../firebase/clientApp';
 
-export default function Home() { 
+import React, { useState } from 'react';
+
+
+
+
+
+export default function Home() {
+
+  // Firebase Google Auth
   const handleGoogle = async (e) => {
     const provider = await new GoogleAuthProvider();
-    
+
     return signInWithPopup(auth, provider);
   };
+
+  let recipientEmail = "sb-dgxxs25791953@personal.example.com";
+  let amount = 100;
+
+
 
   return (
     <>
@@ -81,3 +94,4 @@ export default function Home() {
 
   );
 }
+

@@ -11,7 +11,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { auth, signInWithGoogle, logout } from 'firebase/clientApp.js'
 
 export default function Wallet() {
     return (
@@ -38,6 +37,9 @@ export default function Wallet() {
                                 </Row>
                                 <Row>
                                     <Col className={dash.dashBox3}>
+                                        <h2 className={dash.dashBoxHeader}>Deposit</h2>
+                                        <h1>Send to: rE6NPX5Q7CjX9Kyt19QB6m6Lkge5kQPgzr</h1>
+                                        <button onClick={null}>Check Status</button>
                                         <h2 className={dash.dashBoxHeader}>Repay</h2>
                                     </Col>
                                     <Col className={dash.dashBox3}>
