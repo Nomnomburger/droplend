@@ -11,6 +11,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { auth, signInWithGoogle, logout } from 'firebase/clientApp.js'
 
 export default function Wallet() {
     return (
